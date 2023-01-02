@@ -1,0 +1,64 @@
+@import "../../../styles/index";
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.selects {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  width: 50%;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.inputItem {
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}
+
+.addBtn {
+  @include transparent-btn;
+  width: 100%;
+}
+
+.createBtn {
+  @include transparent-btn;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.deleteBtn {
+  @include transparent-btn;
+  margin: 20px 0 20px 0;
+}
+
+.addProps {}
+
+.infoItem {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+  border-bottom: 2px solid $main-font-color-half-opacity;
+
+  &:first-of-type {
+    margin-top: 30px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.selectItem {
+  &:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../../styles/index";
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.inputItem {
+  width: 100%;
+}
+
+.createBtn {
+  @include transparent-btn;
+  width: 100%;
+  margin-top: 20px;
+}

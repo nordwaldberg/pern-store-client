@@ -1,0 +1,60 @@
+@import "src/styles/mixins";
+
+.card {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  margin-right: 40px;
+  cursor: pointer;
+  width: 320px;
+
+  &:hover {
+    .info {
+      margin-top: -20px;
+    }
+
+    .title {
+      color: $main-font-color-half-opacity;
+    }
+  }
+}
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+
+.info {
+  @include glassmorphism;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 500;
+  margin-top: -50px;
+  padding: 55px 20px 20px 20px  ;
+  transition: 100ms;
+}
+
+.title {
+  font-size: 25px;
+}
+
+.titleBrand {
+  font-weight: 700;
+  margin-right: 5px;
+}
+
+.titleModel {}
+
+.price {
+  font-weight: 700;
+  font-size: 30px;
+}

@@ -1,0 +1,17 @@
+@import "../../../styles/index";
+
+
+
+.uploadFile {
+  margin-top: 30px;
+  font-size: 22px;
+
+  & input {
+    display: none;
+  }
+}
+
+.fakeFileInput {
+  @include grey-to-red-btn;
+  margin-right: 10px;
+}

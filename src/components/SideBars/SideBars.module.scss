@@ -1,0 +1,44 @@
+@import "src/styles/index";
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.list {
+  margin-left: 20px;
+}
+
+.typeItem {
+  cursor: pointer;
+}
+
+.active {
+  color: $main-font-color;
+  padding-left: 10px;
+}
+
+.label {
+  display: flex;
+  align-items: center;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: $main-font-color;
+  transform: rotate(-180deg);
+  writing-mode: vertical-lr;
+}
+
+.labelIcon {
+  width: 2px;
+  height: 40px;
+  background-color: $main-font-color-half-opacity;
+  margin-bottom: 20px;
+}
+
+.resetBtn {
+  @include glass-to-red-btn;
+  margin-top: 20px;
+  font-size: 20px;
+}

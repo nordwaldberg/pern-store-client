@@ -1,0 +1,132 @@
+@import "variables";
+@import "mixins";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Saira Extra Condensed', sans-serif;
+  background-color: $background-color;
+  color: $main-font-color;
+  background-image: url('../assets/white-noize.svg');
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+*::-webkit-scrollbar-thumb {
+  display: none;
+}
+
+#root {
+  padding: 40px;
+  height: 100%;
+}
+
+a {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  color: $main-font-color-half-opacity;
+  font-size: 25px;
+
+  &:hover {
+    outline: none;
+    color: $main-font-color;
+    transition: 150ms;
+  }
+}
+
+button {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  border: none;
+  cursor: pointer;
+  font-size: 25px;
+  margin-right: 0;
+
+  &:hover {
+    outline: none;
+    transition: 150ms;
+  }
+}
+
+input {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: $main-font-color-half-opacity;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+
+  &:focus {
+    background-color: $main-font-color;
+  }
+
+  &[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    border-radius: 10px;
+
+    &:checked {
+      accent-color: $submain-color-red;
+    }
+  }
+
+}
+
+label, span {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 500;
+
+  &:hover {
+    transition: 150ms;
+  }
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-weight: 500;
+}
+
+li {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  list-style: none;
+  color: $main-font-color-half-opacity;
+
+  &:hover {
+    color: $main-font-color;
+    transition: 150ms;
+  }
+}
+
+select {
+  font-family: 'Saira Extra Condensed', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  background-color: $main-font-color-half-opacity;
+  outline: none;
+  border-radius: 5px;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+input[type='number'] {
+  -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}

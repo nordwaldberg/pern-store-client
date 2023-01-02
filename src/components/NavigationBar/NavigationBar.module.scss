@@ -1,0 +1,35 @@
+@import "src/styles/index";
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.link {}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.navButton {
+  @include transparent-btn;
+}
+
+.navButtons {
+  display: flex;
+  justify-content:flex-end;
+  flex-flow: row wrap;
+  margin: -8px;
+  overflow: visible;
+}
+
+.adaptiveBtn {}
+
+.logo {
+  font-size: 30px;
+  color: $main-font-color;
+  margin-right: 100px;
+}

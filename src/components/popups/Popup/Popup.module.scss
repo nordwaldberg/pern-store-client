@@ -1,0 +1,39 @@
+@import "src/styles/index";
+
+.wrapper {
+  @include glassmorphism;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  background-color: $background-color-half-opacity;
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: 150ms;
+}
+
+.wrapperVisible {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.popupWrapper {
+  width: 50%;
+  padding: 20px 40px;
+  transform: scale(0);
+  transition: 150ms;
+  background-color: rgba(236, 240, 241, .2);
+  border-radius: 5px;
+  box-shadow: 0 10px 22px 0 rgba(0,0,0,0.4);
+  overflow: auto;
+}
+
+.popupVisible {
+  transform: scale(1);
+}

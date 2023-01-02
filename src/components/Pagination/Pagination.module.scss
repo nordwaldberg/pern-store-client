@@ -1,0 +1,14 @@
+@import 'src/styles/index';
+
+.wrapper {
+  margin: 25px 0;
+}
+
+.paginationItem {
+  @include transparent-btn;
+  margin-right: 10px;
+}
+
+.paginationItemActive {
+  background-color: $submain-color-red;
+}

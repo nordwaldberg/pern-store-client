@@ -1,0 +1,42 @@
+@import "variables";
+
+@mixin glassmorphism {
+  backdrop-filter: blur(3px);
+  background-color: rgba(236, 240, 241, .2);
+  border-radius: 5px;
+  box-shadow: 0 10px 22px 0 rgba(0,0,0,0.4);
+}
+
+@mixin transparent-btn {
+  background-color: transparent;
+  color: $main-font-color;
+  padding: 2px 10px;
+  border-radius: 5px;
+
+  &:hover {
+      background-color: $submain-color-red;
+  }
+}
+
+@mixin grey-to-red-btn {
+  background-color: $main-font-color-half-opacity;
+  color: $background-color;
+  padding: 2px 10px;
+  border-radius: 5px;
+
+  &:hover {
+    color: $main-font-color;
+    background-color: $submain-color-red;
+  }
+}
+
+@mixin glass-to-red-btn {
+  padding: 2px 10px;
+  border-radius: 5px;
+  @include glassmorphism;
+  color: $main-font-color;
+
+  &:hover {
+    background-color: $submain-color-red;
+  }
+}

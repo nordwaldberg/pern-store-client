@@ -1,0 +1,54 @@
+@import "../../styles/index";
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 200px);
+}
+
+.card {
+  @include glassmorphism;
+  width: 750px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.form {
+  width: 100%;
+}
+
+.formTitle {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.formInputsColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput {
+  margin-bottom: 20px;
+}
+
+.checkboxWrapper {
+  display: flex;
+  align-items: center;
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.formSubmitBtn {
+  @include transparent-btn;
+  margin-bottom: 20px;
+}
+
+.changeForm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
